@@ -15,5 +15,6 @@ Sommaire:
 Il y a aussi quelques annexes :
 
 * [Méthodes de développement](./90-methodes-developpement.md)
+* [Évolution de mes croyances](./91-evolution-de-mes-croyances.md)
 
 Le dossier [brouillons](./brouillons) contient également quelques pistes de réflexion, mais que je considère comme instables.
