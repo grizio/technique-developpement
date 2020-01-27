@@ -12,4 +12,8 @@ Sommaire:
 * [Hypothèses](./00-hypotheses.md)
 * [Design system ou library](./01-design-system-ou-library.md)
 
+Il y a aussi quelques annexes :
+
+* [Méthodes de développement](./90-methodes-developpement.md)
+
 Le dossier [brouillons](./brouillons) contient également quelques pistes de réflexion, mais que je considère comme instables.
