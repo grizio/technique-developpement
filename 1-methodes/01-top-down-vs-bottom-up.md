@@ -1,9 +1,4 @@
-# Méthodes de développement
-
-Dans cette page, je vais énoncer quelques méthodes de développement.
-Elles vous paraîtront peut-être évidentes mais cela vous permettra peut-être de mettre des mots sur cette évidence.
-
-## Top-down vs Bottom-up
+# Top-down vs Bottom-up
 
 Lors de la création ou la modification d'un code, nous avons souvent deux manières générales de traiter le problème :
 
@@ -24,7 +19,7 @@ Pour comprendre ces deux approches, je vous propose l'exemple suivant :
 > 4. Envoi le dossier à un service
 > 5. Sauvegarde le dossier en base de données
 
-### Top-down
+## Top-down
 
 Si nous souhaitons expliciter au mieux ce besoin, nous allons tenter d'avoir une approche top-down.
 Remarque: nous ignorons toutes les promises et gardons un aspect « synchrone » pour expliquer le principe sans complexité technique.
@@ -99,7 +94,7 @@ D'où le terme top-down.
 
 Cette manière de développer permet *généralement* de mettre en évidence les **besoins**.
 
-### Bottom-up
+## Bottom-up
 
 Maintenant, imaginons que notre service nécessite d'utiliser un token lié à l'utilisateur pour déclencher sa requête (parce que pourquoi pas).
 On va devoir faire le travail inverse :
@@ -156,7 +151,7 @@ D'où le terme bottom-up.
 
 Cette manière de développer permet *généralement* de mettre en évidence les **contraintes techniques**.
 
-### Autres remarques
+## Autres remarques
 
 Quand on écrit la première fois le code, il est souvent simple d'appliquer la méthode top-down.
 Après tout, on a un besoin initial, autant partir de ce dernier.
@@ -164,7 +159,7 @@ Après tout, on a un besoin initial, autant partir de ce dernier.
 Par contre, quand on met à jour le code, on peut tomber dans plusieurs contextes.
 Ci-dessous quelques contextes identifiés.
 
-#### Ajout d'une étape
+### Ajout d'une étape
 
 Le besoin exprimé met en évidence l'ajout d'une étape dans le processus.
 Dit autrement, on va insérer un nouveau sous-processus dans l'existant.
@@ -174,7 +169,7 @@ Ainsi, nous continuons à exprimer le besoin dans le code.
 
 Pour reprendre l'exemple, ça pourrait être l'appel de `service.sendDossier` qui serait ajouté à postériori.
 
-#### Ajout d'une contrainte technique - réponse technique
+### Ajout d'une contrainte technique - réponse technique
 
 Cette fois-ci, le besoin exprimé met en évidence une contrainte technique, mais qui ne change pas le processus.
 Dit autrement, la structure du code ne va pas évoluer, mais l'appelé va requérir plus d'information.
@@ -182,7 +177,7 @@ Dit autrement, la structure du code ne va pas évoluer, mais l'appelé va requé
 C'est typiquement l'exemple donné dans la version `bottom-up`.
 À part remonter les contraintes techniques, il est assez complexe (et souvent inutile) de modifier le processus.
 
-#### Ajout d'une contrainte technique - réponse fonctionnelle
+### Ajout d'une contrainte technique - réponse fonctionnelle
 
 Ce cas est plus complexe à mettre en évidence.
 Adaptons notre exemple initial :
@@ -276,7 +271,7 @@ L'accumulation de cette stratégie peut conduire très rapidement à de la dette
 À ce jour, je n'ai pas de recette magique à vous conseiller à part mettre en évidence ces deux pratiques
 et espérer qu'elles vous servent à mieux comprendre les impacts et les réponses auxquelles elles répondent.
 
-### #MyLife Expérience personnelle de ces deux approches
+## #MyLife Expérience personnelle de ces deux approches
 
 Personnellement, j'ai compris les dérives d'une accumulation bottom-up sur un projet réel.
 Je suis arrivé sur ce projet après deux ans de développement dessus (et après une pause, j'étais à ce moment le seul développeur).

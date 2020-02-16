@@ -102,7 +102,7 @@ Ou dans d'autres cas, ce « petit » besoin ouvre une porte trop importante et
 
 Ce que je présente depuis tout à l'heure sont en réalité des solutions **techniques**.
 En voulant répondre au besoin immédiat, on oublie quel est vraiment le besoin.
-C'est typiquement un biais que nous avons lorsqu'on utilise une solution bottom-up (cf. [Méthodes de développement](./90-methodes-developpement.md)).
+C'est typiquement un biais que nous avons lorsqu'on utilise une solution bottom-up (cf. [Méthodes de développement](../1-methodes/01-top-down-vs-bottom-up.md)).
 
 
 J'ai longtemps utilisé ce terme « restrictif » pour dire « ne pas être trop permissif » tout en essayant d'expliquer le problème ci-dessus.
